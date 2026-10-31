@@ -7,7 +7,7 @@
 Ende-zu-Ende verschlüsselte Nachrichten, Anrufe und geteilte Räume —
 auf deinem eigenen Server, nicht bei einem Konzern.
 
-![Version](https://img.shields.io/badge/version-1.3.15-1f6feb?style=for-the-badge&logo=github&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.3.16-1f6feb?style=for-the-badge&logo=github&logoColor=white)
 ![Plattform](https://img.shields.io/badge/plattform-Windows%20·%20Linux%20·%20Android-303030?style=for-the-badge)
 ![E2EE](https://img.shields.io/badge/ende--zu--ende-AES--256--GCM-1a7f37?style=for-the-badge&logo=lock&logoColor=white)
 ![Build](https://img.shields.io/badge/build-quelloffen-6f42c1?style=for-the-badge&logo=git&logoColor=white)
@@ -30,16 +30,17 @@ Jede Version enthält alle Plattformen im selben Stand.
 | 🤖 Android 7+ | `enigma3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`) |
 | 🔐 Alle | `SHA256SUMS.txt` | Prüfsummen aller Dateien |
 
-**Aktuell:** [Enigma 3 – 1.3.15](../../releases/tag/v1.3.15)
+**Aktuell:** [Enigma 3 – 1.3.16](../../releases/tag/v1.3.16)
 
-**Neu in 1.3.15:** Die Systemseite des Servers zeigt mehr Betrieb:
-Laufzeit, aktive Sitzungen, Ereignis-Takt und freier Speicher auf dem
-Datendatenträger. Die LiveKit-Diagnose listet aktive Räume, der IP-Wächter
-meldet seinen Status. Anhänge sichern ihre Bildmaße jetzt verschlüsselt.
-
+**Neu in 1.3.16:** Sicherheitsupdate nach dem Audit vom 31.10.2026. Direktnachrichten
+fallen nicht mehr still auf alte Schlüssel oder Verfahren zurück. Die PIN-Entsperrung
+ist gegen parallele Versuche und manipulierte Parameter gehärtet. Die Desktop-App
+erlaubt Freigaben und externe Links nur nach einer echten Eingabe. „Meine Threads“
+entschlüsselt die Vorschauen verschlüsselter Nachrichten. Die Android-APK wird
+separat bereitgestellt.
 
 **1.3.9 nicht aktualisieren:** Deren Desktop-Pakete enthielten ein veraltetes
-Frontend. Direkt auf 1.3.15 wechseln.
+Frontend. Direkt auf 1.3.16 wechseln.
 
 ## 🚀 In drei Schritten loslegen
 
