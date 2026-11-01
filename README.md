@@ -7,7 +7,7 @@
 Ende-zu-Ende verschlüsselte Nachrichten, Anrufe und geteilte Räume —
 auf deinem eigenen Server, nicht bei einem Konzern.
 
-![Version](https://img.shields.io/badge/version-1.3.17-1f6feb?style=for-the-badge&logo=github&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.3.18-1f6feb?style=for-the-badge&logo=github&logoColor=white)
 ![Plattform](https://img.shields.io/badge/plattform-Windows%20·%20Linux%20·%20Android-303030?style=for-the-badge)
 ![E2EE](https://img.shields.io/badge/ende--zu--ende-AES--256--GCM-1a7f37?style=for-the-badge&logo=lock&logoColor=white)
 ![Build](https://img.shields.io/badge/build-quelloffen-6f42c1?style=for-the-badge&logo=git&logoColor=white)
@@ -29,7 +29,7 @@ iOS werden separat selbst gebaut und sind nicht Teil jedes Releases.
 | 🐧 Linux / 🤖 Android | – | Selbst gebaut, nicht im Release enthalten |
 | 🔐 Alle | `SHA256SUMS.txt` | Prüfsummen aller Release-Dateien |
 
-**Aktuell:** [Enigma 3 – 1.3.17](../../releases/tag/v1.3.17)
+**Aktuell:** [Enigma 3 – 1.3.18](../../releases/tag/v1.3.18)
 
 ## 🚀 In drei Schritten loslegen
 
