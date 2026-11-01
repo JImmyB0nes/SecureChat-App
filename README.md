@@ -20,12 +20,15 @@ auf deinem eigenen Server, nicht bei einem Konzern.
 
 ## 📦 Downloads
 
-Releases enthalten den Windows-Installer. Linux-AppImages, Android-APK und
-iOS werden separat selbst gebaut und sind nicht Teil jedes Releases.
+Jede Version enthält alle Plattformen im selben Stand. iOS wird separat
+selbst gebaut und ist nicht Teil des Releases.
 
 | Plattform | Datei | Hinweis |
 | --- | --- | --- |
 | 🪟 Windows 10/11 x64 | `Enigma-3-Setup-<Version>.exe` | NSIS-Installer, unsigniert (SmartScreen-Hinweis) |
+| 🐧 Linux x86_64 | `Enigma-3-<Version>-x86_64.AppImage` | Einmal `chmod +x`, dann starten |
+| 🐧 Linux arm64 | `Enigma-3-<Version>-arm64.AppImage` | Einmal `chmod +x`, dann starten |
+| 🤖 Android 7+ | `enigma3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`) |
 | 🔐 Alle | `SHA256SUMS.txt` | Prüfsummen aller Release-Dateien |
 
 **Aktuell:** [Enigma 3 – 1.3.19](../../releases/tag/v1.3.19)
