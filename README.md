@@ -26,7 +26,6 @@ iOS werden separat selbst gebaut und sind nicht Teil jedes Releases.
 | Plattform | Datei | Hinweis |
 | --- | --- | --- |
 | 🪟 Windows 10/11 x64 | `Enigma-3-Setup-<Version>.exe` | NSIS-Installer, unsigniert (SmartScreen-Hinweis) |
-| 🐧 Linux / 🤖 Android | `Enigma-3-1.3.18-*.AppImage`, `enigma3-1.3.18.apk` | Stand 1.3.18, unverändert übernommen |
 | 🔐 Alle | `SHA256SUMS.txt` | Prüfsummen aller Release-Dateien |
 
 **Aktuell:** [Enigma 3 – 1.3.19](../../releases/tag/v1.3.19)
