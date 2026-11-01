@@ -31,15 +31,6 @@ iOS werden separat selbst gebaut und sind nicht Teil jedes Releases.
 
 **Aktuell:** [Enigma 3 – 1.3.17](../../releases/tag/v1.3.17)
 
-**Neu in 1.3.17:** Das Tray-Symbol zeigt ungelesene Nachrichten (roter Punkt,
-Zähler in der Taskleiste, Tooltip). Registrierungscodes ersetzen Einladungslinks,
-Konten lassen sich reversibel deaktivieren. Electron 45.1.0 und weitere
-Sicherheitsfixes. Neue Geräte von Kontakten werden sofort erkannt (Schloss-Symbol).
-Dazu Fehlerbehebungen bei Benachrichtigungen, Fokus und Firefox.
-
-**1.3.9 nicht aktualisieren:** Deren Desktop-Pakete enthielten ein veraltetes
-Frontend. Direkt auf 1.3.17 wechseln.
-
 ## 🚀 In drei Schritten loslegen
 
 1. **Server.** Du brauchst einen laufenden SecureChat-Server mit HTTPS.
