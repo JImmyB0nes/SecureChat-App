@@ -1,79 +1,117 @@
-# Enigma 3
-
 <div align="center">
 
-**Die App zum selbst gehosteten SecureChat-Server.**
+<img src="https://img.shields.io/badge/Enigma_3-1.4.2-1f6feb?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Version 1.4.2" />
+<img src="https://img.shields.io/badge/Ende--zu--Ende-verschl%C3%BCsselt-1a7f37?style=for-the-badge&logo=lock&logoColor=white" alt="Ende-zu-Ende-verschlüsselt" />
+<img src="https://img.shields.io/badge/Windows·Linux·Android-303030?style=for-the-badge" alt="Plattformen" />
 
-Ende-zu-Ende verschlüsselte Nachrichten, Anrufe und geteilte Räume —
-auf deinem eigenen Server, nicht bei einem Konzern.
+# Enigma 3
 
-![Version](https://img.shields.io/badge/version-1.3.19-1f6feb?style=for-the-badge&logo=github&logoColor=white)
-![Plattform](https://img.shields.io/badge/plattform-Windows%20·%20Linux%20·%20Android-303030?style=for-the-badge)
-![E2EE](https://img.shields.io/badge/ende--zu--ende-AES--256--GCM-1a7f37?style=for-the-badge&logo=lock&logoColor=white)
-![Build](https://img.shields.io/badge/build-quelloffen-6f42c1?style=for-the-badge&logo=git&logoColor=white)
+**Deine Nachrichten. Dein Server. Niemand sonst.**
 
-[**⬇️ Herunterladen**](../../releases/latest)
+Die App zum selbst gehosteten SecureChat-Server: Ende-zu-Ende verschlüsselte
+Nachrichten, Anrufe und gemeinsame Räume — auf deiner eigenen Hardware,
+nicht bei einem Konzern.
+
+<br/>
+
+[**⬇ JETZT HERUNTERLADEN**](../../releases/latest)
 
 </div>
 
 ---
 
+## 🔥 Neu in 1.4.2
+
+- **Windows:** Die App startet wieder mit deiner gespeicherten Sprache und
+  dem erkannten Systemdesign (Hell/Dunkel).
+- **Sicherheit:** Alle Nachrichten einer Instanz lassen sich von Admins
+  vollständig löschen — mit Passwort, Bestätigung und Prüfpfad.
+
+---
+
 ## 📦 Downloads
 
-Jede Version enthält alle Plattformen im selben Stand. iOS wird separat
-selbst gebaut und ist nicht Teil des Releases.
+| Plattform | Datei | Startklar mit |
+| :--- | :--- | :--- |
+| 🪟 Windows 10/11 (x64) | `Enigma-3-Setup-<Version>.exe` | Ausführen. Ersetzt Vorversionen, behält alle Daten. |
+| 🐧 Linux x86_64 | `Enigma-3-<Version>-x86_64.AppImage` | `chmod +x` — dann doppelklicken. |
+| 🐧 Linux arm64 | `Enigma-3-<Version>-arm64.AppImage` | `chmod +x` — dann doppelklicken. |
+| 🤖 Android 7+ | `enigma3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`). |
 
-| Plattform | Datei | Hinweis |
-| --- | --- | --- |
-| 🪟 Windows 10/11 x64 | `Enigma-3-Setup-<Version>.exe` | NSIS-Installer, unsigniert (SmartScreen-Hinweis) |
-| 🐧 Linux x86_64 | `Enigma-3-<Version>-x86_64.AppImage` | Einmal `chmod +x`, dann starten |
-| 🐧 Linux arm64 | `Enigma-3-<Version>-arm64.AppImage` | Einmal `chmod +x`, dann starten |
-| 🤖 Android 7+ | `enigma3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`) |
-| 🔐 Alle | `SHA256SUMS.txt` | Prüfsummen aller Release-Dateien |
+🔐 Prüfsummen aller Dateien: [`SHA256SUMS.txt`](../../releases/latest/download/SHA256SUMS.txt)
 
-**Aktuell:** [Enigma 3 – 1.3.19](../../releases/tag/v1.3.19)
+> **Aktuell ist immer nur eine Version verfügbar.** Ältere Releases werden
+> gelöscht, damit keine veralteten Pakete im Umlauf bleiben.
 
-## 🚀 In drei Schritten loslegen
+---
 
-1. **Server.** Du brauchst einen laufenden SecureChat-Server mit HTTPS.
-2. **App installieren.** Windows-Datei ausführen: sie ersetzt eine bestehende
-   Version und behält alle Daten.
-3. **Verbinden.** Beim ersten Start die Adresse deines Servers eintragen. Die
-   Anmeldung öffnet den Systembrowser.
+## ⚡ In drei Schritten loslegen
+
+```text
+1. Server   →  Ein laufender SecureChat-Server mit HTTPS.
+2. App      →  Unten herunterladen und installieren.
+3. Starten  →  Serveradresse eintragen, im Browser anmelden, loslegen.
+```
+
+<details>
+<summary><b>Details &amp; häufige Fälle</b></summary>
+
+- **Windows:** Der Installer ist unsigniert. SmartScreen zeigt einen Hinweis —
+  nur bestätigen, wenn diese Seite die Quelle war.
+- **Android:** Eine vorhandene Debug-APK vorher deinstallieren, der
+  Release-Schlüssel ist ein anderer. Installation über „Unbekannte Quellen".
+- **iPhone:** Wird nicht als App verteilt. Nutze die Web-App im Safari.
+- **Upgrades:** Neue Version einfach über die bestehende installieren. Es
+  bleiben alle Sitzungen, Einstellungen und Schlüssel erhalten.
+
+</details>
+
+---
+
+## 🛡️ Was die App schützt
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔒 Ende-zu-Ende
+Dein Gerät verschlüsselt die Nachricht, bevor sie das Haus verlässt.
+Der Server überträgt und speichert, was er nicht lesen kann.
+
+### 🔁 Vorwärtsgeheimheit
+Jede Nachricht hat einen eigenen Schlüssel. Ein verlorener Schlüssel
+legt deine Vergangenheit nicht offen.
+
+</td>
+<td width="50%">
+
+### 📱 Gerätesperre
+Biometrie oder PIN versiegeln die Schlüssel im lokalen Tresor
+(Argon2id). Android nutzt den Keystore, Windows DPAPI.
+
+### ⏳ Selbstlöschung
+Du entscheidest, wie lange deine Nachrichten bleiben —
+auf dem Server und auf jedem Gerät.
+
+</td>
+</tr>
+</table>
+
+Kein Tracking. Kein Crash-Reporting. Kein Hintergrund-Download.
+Updates kommen ausschließlich aus diesem Repository.
+
+---
 
 ## 🔍 Integrität prüfen
-
-Alle Dateien haben eine SHA-256-Prüfsumme in `SHA256SUMS.txt`:
 
 ```sh
 sha256sum -c SHA256SUMS.txt
 ```
 
-Die Desktop-App prüft Update-Hinweise automatisch gegen diese Prüfsumme. Ohne
-Prüfsumme bietet die App kein Update an.
+Die Desktop-App prüft Update-Hinweise automatisch gegen diese Summen:
+Ohne passende Prüfsumme bietet die App kein Update an.
 
-## 🛡️ Was die App schützt
-
-| | |
-| --- | --- |
-| 🔒 **Ende-zu-Ende** | Dein Gerät verschlüsselt die Nachricht, bevor sie das Gerät verlässt. Der Server speichert und überträgt, was er nicht lesen kann. |
-| 🔁 **Vorwärtsgeheimheit** | Jede Nachricht hat einen eigenen Schlüssel. Ein verlorener Schlüssel legt deine Vergangenheit nicht offen. |
-| 📱 **Gerätesperre** | Biometrie oder PIN versiegeln die Schlüssel im lokalen Tresor (Argon2id). Android nutzt Keystore, Windows DPAPI. |
-| ⏳ **Selbstlöschung** | Du bestimmst, wie lange deine Nachrichten bleiben. |
-
-## ⚠️ Hinweise zur Sicherheit
-
-- Die Windows-Installer sind **unsigniert**. SmartScreen zeigt deshalb einen
-  Hinweis. Bestätige ihn nur, wenn diese Seite die Quelle ist.
-- Updates kommen ausschließlich aus diesem Repository. Kein Hintergrund-Download:
-  Die App zeigt höchstens einmal täglich einen Hinweis, und erst nach deinem
-  Klick wird heruntergeladen.
-- Die iPhone-App wird nicht mehr auf Geräten verteilt. iPhone-Nutzer verwenden
-  die Web-App im Safari.
-
-## 🕷️ Ältere Versionen
-
-Nur die aktuelle Version wird verteilt.
+---
 
 ## 💬 Kontakt
 
