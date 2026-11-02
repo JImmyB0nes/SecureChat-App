@@ -18,14 +18,6 @@ nicht bei einem Konzern.
 
 </div>
 
----
-
-## 🔥 Neu in 1.4.2
-
-- **Windows:** Die App startet wieder mit deiner gespeicherten Sprache und
-  dem erkannten Systemdesign (Hell/Dunkel).
-- **Sicherheit:** Alle Nachrichten einer Instanz lassen sich von Admins
-  vollständig löschen — mit Passwort, Bestätigung und Prüfpfad.
 
 ---
 
