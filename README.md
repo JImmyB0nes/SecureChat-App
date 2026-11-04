@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Enigma_3-1.7.1-1f6feb?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Version 1.7.1" />
+<img src="https://img.shields.io/badge/Enigma_3-1.7.2-1f6feb?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Version 1.7.2" />
 <img src="https://img.shields.io/badge/Ende--zu--Ende-verschl%C3%BCsselt-1a7f37?style=for-the-badge&logo=lock&logoColor=white" alt="Ende-zu-Ende-verschlüsselt" />
 <img src="https://img.shields.io/badge/Windows·Linux·Android-303030?style=for-the-badge" alt="Plattformen" />
 
