@@ -84,7 +84,7 @@ legt deine Vergangenheit nicht offen.
 
 ### 📱 Gerätesperre
 Biometrie oder eine 8-stellige PIN versiegeln die Schlüssel im lokalen
-Tresor (Argon2id mit Gerätesygeheimnis als Pepper). Android nutzt den Keystore,
+Tresor (Argon2id mit Gerätegeheimnis als Pepper). Android nutzt den Keystore,
 Windows DPAPI.
 
 ### ⏳ Selbstlöschung
