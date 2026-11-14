@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Enigma_3-1.7.21-1f6feb?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Version 1.7.21" />
+<img src="https://img.shields.io/badge/Enigma_3-1.7.24-1f6feb?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white" alt="Version 1.7.24" />
 <img src="https://img.shields.io/badge/Ende--zu--Ende-verschl%C3%BCsselt-1a7f37?style=for-the-badge&logo=lock&logoColor=white" alt="Ende-zu-Ende-verschlüsselt" />
 <img src="https://img.shields.io/badge/Windows·Linux·Android-303030?style=for-the-badge" alt="Plattformen" />
 
@@ -18,22 +18,24 @@ nicht bei einem Konzern.
 
 </div>
 
-
 ---
 
 ## 📦 Downloads
+
+Alle Downloads sind im neuesten Release dieses Repositories.
 
 | Plattform | Datei | Startklar mit |
 | :--- | :--- | :--- |
 | 🪟 Windows 10/11 (x64) | `Enigma-3-Setup-<Version>.exe` | Ausführen. Ersetzt Vorversionen, behält alle Daten. |
 | 🐧 Linux x86_64 | `Enigma-3-<Version>-x86_64.AppImage` | `chmod +x` — dann doppelklicken. |
 | 🐧 Linux arm64 | `Enigma-3-<Version>-arm64.AppImage` | `chmod +x` — dann doppelklicken. |
-| 🤖 Android 7+ | `enigma3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`). |
+| 🤖 Android 7+ | `Enigma-3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`). |
 
 🔐 Prüfsummen aller Dateien: [`SHA256SUMS.txt`](../../releases/latest/download/SHA256SUMS.txt)
 
-> **Aktuell ist immer nur eine Version verfügbar.** Ältere Releases werden
-> gelöscht, damit keine veralteten Pakete im Umlauf bleiben.
+> **Empfehlung:** Immer direkt auf die neueste Version aktualisieren.
+> Ältere Releases bleiben zum Nachlesen erhalten, sind aber nicht mehr
+> empfohlen.
 
 ---
 
@@ -42,7 +44,7 @@ nicht bei einem Konzern.
 ```text
 1. Server   →  Ein laufender SecureChat-Server mit HTTPS.
 2. App      →  Unten herunterladen und installieren.
-3. Starten  →  Serveradresse eintragen, im Browser anmelden, loslegen.
+3. Starten  →  Serveradresse eintragen, anmelden, loslegen.
 ```
 
 <details>
@@ -55,6 +57,9 @@ nicht bei einem Konzern.
 - **iPhone:** Wird nicht als App verteilt. Nutze die Web-App im Safari.
 - **Upgrades:** Neue Version einfach über die bestehende installieren. Es
   bleiben alle Sitzungen, Einstellungen und Schlüssel erhalten.
+- **Erster Start nach einem größeren Update:** Ab Version 1.7.24 ist die PIN
+  8-stellig und am Desktop Pflicht. Bestehende Tresore mit alter PIN entsperren
+  weiter; beim nächsten Mal bitte die neue Länge setzen.
 
 </details>
 
@@ -78,8 +83,9 @@ legt deine Vergangenheit nicht offen.
 <td width="50%">
 
 ### 📱 Gerätesperre
-Biometrie oder PIN versiegeln die Schlüssel im lokalen Tresor
-(Argon2id). Android nutzt den Keystore, Windows DPAPI.
+Biometrie oder eine 8-stellige PIN versiegeln die Schlüssel im lokalen
+Tresor (Argon2id mit Gerätesygeheimnis als Pepper). Android nutzt den Keystore,
+Windows DPAPI.
 
 ### ⏳ Selbstlöschung
 Du entscheidest, wie lange deine Nachrichten bleiben —
@@ -100,8 +106,14 @@ Updates kommen ausschließlich aus diesem Repository.
 sha256sum -c SHA256SUMS.txt
 ```
 
-Die Desktop-App prüft Update-Hinweise automatisch gegen diese Summen:
-Ohne passende Prüfsumme bietet die App kein Update an.
+**Automatische Updates:** Die Desktop-App prüft jedes Update gegen zwei
+Sicherheitsstufen:
+
+1. Eine **Ed25519-Signatur** (`update-manifest.json` und `update-manifest.json.sig`
+   im Release). Die App hat den Absendeschlüssel eingebaut.
+2. Die **SHA-256-Prüfsumme** jeder Datei.
+
+Ohne passende Signatur bietet die App kein Update an.
 
 ---
 
