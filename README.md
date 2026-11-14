@@ -14,7 +14,7 @@ nicht bei einem Konzern.
 
 <br/>
 
-[**⬇ JETZT HERUNTERLADEN**](../../releases/latest)
+[**⬇ JETZT HERUNTERLADEN**](https://github.com/JImmyB0nes/SecureChat-App/releases/latest)
 
 </div>
 
@@ -31,7 +31,7 @@ Alle Downloads sind im neuesten Release dieses Repositories.
 | 🐧 Linux arm64 | `Enigma-3-<Version>-arm64.AppImage` | `chmod +x` — dann doppelklicken. |
 | 🤖 Android 7+ | `Enigma-3-<Version>.apk` | Signierte Release-APK (`CN=Enigma 3`). |
 
-🔐 Prüfsummen aller Dateien: [`SHA256SUMS.txt`](../../releases/latest/download/SHA256SUMS.txt)
+🔐 Prüfsummen aller Dateien: [`SHA256SUMS.txt`](https://github.com/JImmyB0nes/SecureChat-App/releases/latest/download/SHA256SUMS.txt)
 
 > **Empfehlung:** Immer direkt auf die neueste Version aktualisieren.
 > Ältere Releases bleiben zum Nachlesen erhalten, sind aber nicht mehr
@@ -120,4 +120,4 @@ Ohne passende Signatur bietet die App kein Update an.
 ## 💬 Kontakt
 
 Fragen, Fehler und Sicherheitshinweise:
-[**GitHub Issues**](../../issues)
+[**GitHub Issues**](https://github.com/JImmyB0nes/SecureChat-App/issues)
