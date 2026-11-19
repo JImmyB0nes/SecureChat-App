@@ -3,14 +3,12 @@
 Enigma 3 is end-to-end encrypted. What that means in practice, and where the
 limits lie, is documented in the app itself and in the release notes.
 
-## Report privately
+## Report an issue
 
-Please do **not** report security issues in a public issue. Use one of these
-routes:
-
-- **Email:** `security@jimmybones.de`
-- **Encrypted:** send a note first and we will provide the public key and
-  fingerprint.
+Please open a [**GitHub issue**](https://github.com/JImmyB0nes/SecureChat-App/issues)
+for anything you consider a security problem. There is no separate reporting
+channel — if you are unsure whether something is a vulnerability, open an issue
+and it will be triaged.
 
 We confirm receipt within 72 hours and deliver an assessment within 14 days.
 

@@ -178,8 +178,8 @@ shasum -a 256 Enigma-3-<Version>-x86_64.AppImage
 ```
 
 Compare the result with the line in `SHA256SUMS-<Version>.txt`.
-If it differs, do not install the file and report it privately as described
-in [SECURITY.md](SECURITY.md).
+If it differs, do not install the file and open an issue, as described in
+[SECURITY.md](SECURITY.md).
 
 </details>
 
@@ -248,5 +248,5 @@ next time.
 | Topic | Route |
 | :--- | :--- |
 | Questions and bugs | [**GitHub Issues**](https://github.com/JImmyB0nes/SecureChat-App/issues) |
-| Security issues | Privately, see [SECURITY.md](SECURITY.md) |
+| Security issues | [**Open an issue**](https://github.com/JImmyB0nes/SecureChat-App/issues), see [SECURITY.md](SECURITY.md) |
 | Releases and changelog | [Latest release](https://github.com/JImmyB0nes/SecureChat-App/releases) |
