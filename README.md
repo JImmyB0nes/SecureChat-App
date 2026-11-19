@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/logo.png" alt="Enigma 3" width="320" />
+<img src="docs/logo.png" alt="Enigma 3" width="300" />
 
 [![Version](https://img.shields.io/github/v/release/JImmyB0nes/SecureChat-App?style=for-the-badge&label=Enigma%203&color=1f6feb)](https://github.com/JImmyB0nes/SecureChat-App/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/JImmyB0nes/SecureChat-App/total?style=for-the-badge&label=downloads&color=2ea043)](https://github.com/JImmyB0nes/SecureChat-App/releases)
