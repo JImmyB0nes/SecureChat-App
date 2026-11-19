@@ -1,42 +1,38 @@
-# Sicherheitshinweise
+# Security policy
 
-Enigma 3 ist Ende-zu-Ende verschlüsselt. Was das heißt und wo die Grenzen
-liegen, steht im Sicherheitsmodell des Server-Repositories:
+Enigma 3 is end-to-end encrypted. What that means in practice, and where the
+limits lie, is documented in the app itself and in the release notes.
 
-<https://git.jimmybones.de/jimmybones/securechat>
+## Report privately
 
-## Vertraulich melden
+Please do **not** report security issues in a public issue. Use one of these
+routes:
 
-Bitte melde Sicherheitslücken **nicht öffentlich** über ein Issue. Nutze
-einen der Wege:
+- **Email:** `security@jimmybones.de`
+- **Encrypted:** send a note first and we will provide the public key and
+  fingerprint.
 
-- **E-Mail:** `security@jimmybones.de`
-- **Verschlüsselt:** bitte einen Hinweis schicken, dann senden wir
-  Public-Key und Fingerabdruck zu.
+We confirm receipt within 72 hours and deliver an assessment within 14 days.
 
-Wir bestätigen den Eingang innerhalb von 72 Stunden und liefern eine
-Einordnung, spätestens nach 14 Tagen.
+## What we consider a vulnerability
 
-## Was wir als Lücke ansehen
+- Anything that bypasses or weakens the end-to-end encryption.
+- Key access through the app (vault, keystore, DPAPI, PIN handling).
+- The update path: signature verification, checksums, the manifest.
+- Device binding that can be silently undermined.
+- Remotely exploitable flaws in the web view or the Capacitor layer.
 
-- Alles, was die Ende-zu-Ende-Verschlüsselung umgeht oder entwertet.
-- Schlüsselzugriff über die App (Tresor, Keystore, DPAPI, PIN-Umkreisung).
-- Update-Pfad: Signaturprüfung, Prüfsummen, Manifest.
-- Gerätebindung, die sich unbemerkt unterlaufen lässt.
-- Remote ausnutzbare Fehler in der Web-View oder im Capacitor-Layer.
+## What we do not consider a vulnerability
 
-## Was wir nicht als Lücke ansehen
+- Attacks that already require physical access to your unlocked device.
+- Copies on recipient devices (screenshots, downloads).
+- Antivirus warnings about the unsigned installer.
+- Dependencies that only matter on an already compromised machine.
 
-- Angriffe, für die bereits physischer Zugriff auf dein entsperrtes
-  Gerät nötig ist.
-- Kopien auf Empfängergeräten (Screenshots, Downloads).
-- Warnungen von Virenscannern gegen den unsignierten Installer.
-- Abhängigkeiten, die nur bei bereits kompromittierter Maschine zählen.
-
-Im Zweifel: lieber einmal mehr melden.
+When in doubt: report it once more rather than once too little.
 
 ## Updates
 
-Updates laufen über die Desktop-App oder dieses Repository. Die App prüft
-jede Version gegen eine eingebaute Ed25519-Signatur und die SHA-256-Prüfsumme
-der Datei. Beides steht im Release.
+Updates run through the desktop app or this repository. The app checks every
+version against a built-in Ed25519 signature and the SHA-256 checksum of the
+file. Both are published in the release.

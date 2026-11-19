@@ -1,14 +1,14 @@
-## Was geändert wird
+## What is being changed
 
-<!-- Zweck dieser Änderung in einem Satz. -->
+<!-- The purpose of this change in one sentence. -->
 
-## Wie es geprüft wurde
+## How it was tested
 
-- [ ] Auf Windows getestet
-- [ ] Auf Linux getestet
-- [ ] Auf Android getestet
-- [ ] Update über eine Vorversion hat Daten und Schlüssel behalten
+- [ ] Tested on Windows
+- [ ] Tested on Linux
+- [ ] Tested on Android
+- [ ] Updating over a previous version kept data and keys
 
-## Besondere Hinweise
+## Notes
 
-<!-- Neue Schlüssel, Formatänderungen, Migrationen oder Änderungen am Update-Pfad. -->
+<!-- New keys, format changes, migrations or changes to the update path. -->

@@ -1,36 +1,36 @@
-name: Fehler melden
-description: Etwas funktioniert nicht wie erwartet
+name: Bug report
+description: Something does not work as expected
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Bitte keine Sicherheitslücken hier melden — dafür steht
+        Please do not report security issues here — see
         [SECURITY.md](../../SECURITY.md).
   - type: input
     id: version
     attributes:
-      label: App-Version
-      description: Siehe „Über“ in der App oder der Dateiname aus dem Release.
+      label: App version
+      description: See "About" in the app, or the file name from the release.
       placeholder: "1.7.46"
     validations: { required: true }
   - type: dropdown
     id: platform
     attributes:
-      label: Plattform
-      options: [Windows, Linux x86_64, Linux arm64, Android, iPhone oder Web-App]
+      label: Platform
+      options: [Windows, Linux x86_64, Linux arm64, Android, iPhone or web app]
     validations: { required: true }
   - type: input
     id: server
     attributes:
-      label: Server-Adresse
-      description: Nur die Domain, kein Passwort oder Token.
+      label: Server address
+      description: Only the domain, no password or token.
       placeholder: "chat.example.com"
   - type: textarea
     id: steps
     attributes:
-      label: Schritte zum Nachvollziehen
+      label: Steps to reproduce
       value: |
         1.
         2.
@@ -39,19 +39,19 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: Erwartetes Verhalten
+      label: Expected behaviour
     validations: { required: true }
   - type: textarea
     id: actual
     attributes:
-      label: Was tatsächlich passiert ist
-      description: Wenn möglich mit Fehlermeldung oder Auszug aus dem Log.
+      label: What actually happened
+      description: If possible with the error message or an excerpt from the log.
     validations: { required: true }
   - type: checkboxes
     id: checks
     attributes:
-      label: Ich habe schon geprüft
+      label: I have already checked
       options:
-        - label: Ich bin auf der neuesten Version.
-        - label: Die SHA-256-Prüfsumme der Installation passt.
-        - label: Das Problem tritt auch auf einem frischen Konto auf.
+        - label: I am on the latest version.
+        - label: The SHA-256 checksum of the installation matches.
+        - label: The problem also occurs on a fresh account.
