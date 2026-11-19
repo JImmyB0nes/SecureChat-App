@@ -1,0 +1,57 @@
+name: Fehler melden
+description: Etwas funktioniert nicht wie erwartet
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte keine Sicherheitslücken hier melden — dafür steht
+        [SECURITY.md](../../SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: App-Version
+      description: Siehe „Über“ in der App oder der Dateiname aus dem Release.
+      placeholder: "1.7.46"
+    validations: { required: true }
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plattform
+      options: [Windows, Linux x86_64, Linux arm64, Android, iPhone oder Web-App]
+    validations: { required: true }
+  - type: input
+    id: server
+    attributes:
+      label: Server-Adresse
+      description: Nur die Domain, kein Passwort oder Token.
+      placeholder: "chat.example.com"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Nachvollziehen
+      value: |
+        1.
+        2.
+        3.
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes:
+      label: Was tatsächlich passiert ist
+      description: Wenn möglich mit Fehlermeldung oder Auszug aus dem Log.
+    validations: { required: true }
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Ich habe schon geprüft
+      options:
+        - label: Ich bin auf der neuesten Version.
+        - label: Die SHA-256-Prüfsumme der Installation passt.
+        - label: Das Problem tritt auch auf einem frischen Konto auf.
